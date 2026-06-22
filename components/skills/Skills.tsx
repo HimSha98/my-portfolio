@@ -1,0 +1,148 @@
+"use client";
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
+
+interface Skill {
+  name: string;
+  image: string;
+  height: number;
+  width: number;
+}
+
+const skills: Skill[] = [
+    {
+        name: "React",
+        image: "/images/skills/next.png",
+        height: 100,
+        width: 100,
+    },
+    {
+        name: "TypeScript",
+        image: "/images/skills/react.png",
+        height: 100,
+        width: 100,
+    },
+    {
+        name: "Typescript",
+        image: "/images/skills/typescript.png",
+        height: 100,
+        width: 100,
+    },
+    {
+        name: "HTML",
+        image: "/images/skills/html.png",
+        height: 56,
+        width: 56,
+    },
+    {
+        name: "Docker",
+        image: "/images/skills/docker.png",
+        height: 24,
+        width: 24,
+    },
+    {
+        name: "Tailwind",
+        image: "/images/skills/tailwind.png",
+        height: 24,
+        width: 24,
+    },
+];
+
+const duplicatedSkills = [...skills, ...skills];
+
+const Skills = () => {
+
+    const sliderRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+    const slider = sliderRef.current;
+
+    if (!slider) return;
+
+    const interval = setInterval(() => {
+        slider.scrollLeft += 1;
+
+        if (
+        slider.scrollLeft >=
+        slider.scrollWidth - slider.clientWidth
+        ) {
+        slider.scrollLeft = 0;
+        }
+    }, 20);
+
+    return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <section className="relative overflow-hidden bg-[#040612] py-28">
+        {/* Background Glow */}
+        <div className="absolute left-[-200px] top-10 h-[300px] w-[800px] rotate-[20deg] rounded-full bg-indigo-500/20 blur-[120px]" />
+
+        <div className="absolute left-[-100px] top-[300px] h-[250px] w-[700px] rotate-[20deg] rounded-full bg-indigo-500/20 blur-[120px]" />
+
+        {/* Left Bubble */}
+        <div className="absolute left-10 top-16 hidden md:block">
+            <div className="relative rounded-full bg-white/10 px-6 py-3 backdrop-blur-xl">
+            <p className="font-medium text-white">Engineer</p>
+
+            <div className="absolute left-8 top-full h-4 w-4 rotate-45 bg-white/10" />
+            </div>
+        </div>
+
+        {/* Right Bubble */}
+        <div className="absolute right-10 top-16 hidden md:block">
+            <div className="relative rounded-full bg-white/10 px-6 py-3 backdrop-blur-xl">
+            <p className="font-medium text-white">Developer</p>
+
+            <div className="absolute right-8 top-full h-4 w-4 rotate-45 bg-white/10" />
+            </div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6">
+            {/* Heading */}
+            <div className="text-center">
+            <h2 className="text-5xl font-bold text-white md:text-6xl">
+                Skills & Technologies
+            </h2>
+
+            <p className="mt-3 text-lg text-gray-400">
+                Tools I use to build, ship, and scale.
+            </p>
+            </div>
+
+            {/* Skills */}
+            <div
+                ref={sliderRef}
+                className="
+                    mt-24
+                    flex
+                    gap-20
+                    overflow-x-auto
+                    no-scrollbar
+                "
+                >
+                {duplicatedSkills.map((skill, index) => (
+                    <div
+                    key={index}
+                    className="flex min-w-[180px] flex-col items-center justify-center gap-4"
+                    >
+                    <Image
+                        src={skill.image}
+                        alt={skill.name}
+                        className="object-contain"
+                        width={skill.width}
+                        height={skill.height}
+                    />
+
+                    {/* <p className="text-gray-400">
+                        {skill.name}
+                    </p> */}
+                    </div>
+                ))}
+            </div>
+        </div>
+        </section>
+    );
+};
+
+export default Skills;
