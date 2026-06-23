@@ -11,38 +11,98 @@ interface Skill {
 
 const skills: Skill[] = [
     {
-        name: "React",
-        image: "/images/skills/next.png",
-        height: 100,
-        width: 100,
-    },
-    {
-        name: "TypeScript",
-        image: "/images/skills/react.png",
-        height: 100,
-        width: 100,
-    },
-    {
-        name: "Typescript",
-        image: "/images/skills/typescript.png",
-        height: 100,
-        width: 100,
-    },
-    {
         name: "HTML",
         image: "/images/skills/html.png",
         height: 56,
         width: 56,
     },
     {
-        name: "Docker",
-        image: "/images/skills/docker.png",
-        height: 24,
-        width: 24,
+        name: "Scss",
+        image: "/images/skills/scss.png",
+        height: 56,
+        width: 56,
     },
     {
         name: "Tailwind",
-        image: "/images/skills/tailwind.png",
+        image: "/images/skills/tailwindCSS.png",
+        height: 56,
+        width: 56,
+    },
+    {
+        name: "JS",
+        image: "/images/skills/js.png",
+        height: 56,
+        width: 56,
+    },
+    {
+        name: "Typescript",
+        image: "/images/skills/typescript.png",
+        height: 120,
+        width: 120,
+    },
+    {
+        name: "React",
+        image: "/images/skills/react.png",
+        height: 120,
+        width: 120,
+    },
+    {
+        name: "Next",
+        image: "/images/skills/next.png",
+        height: 110,
+        width: 110,
+    },
+    {
+        name: "Node",
+        image: "/images/skills/nodeJS.png",
+        height: 90,
+        width: 90,
+    },
+    {
+        name: "Express",
+        image: "/images/skills/expressJS.png",
+        height: 65,
+        width: 65,
+    },
+    {
+        name: "mongodb",
+        image: "/images/skills/mongoDB.png",
+        height: 70,
+        width: 70,
+    },
+    {
+        name: "Arcject",
+        image: "/images/skills/arcjet.png",
+        height: 140,
+        width: 140,
+    },
+    {
+        name: "Rtk",
+        image: "/images/skills/rtk.png",
+        height: 120,
+        width: 120,
+    },
+    // {
+    //     name: "Zustand",
+    //     image: "/images/skills/zustand.png",
+    //     height: 100,
+    //     width: 100,
+    // },
+    {
+        name: "Python",
+        image: "/images/skills/python.png",
+        height: 80,
+        width: 80,
+    },
+    {
+        name: "Django",
+        image: "/images/skills/django.png",
+        height: 100,
+        width: 100,
+    },
+    {
+        name: "Resend",
+        image: "/images/skills/resend.png",
         height: 24,
         width: 24,
     },
@@ -74,7 +134,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <section className="relative overflow-hidden bg-[#040612] py-28">
+        <section className="relative overflow-hidden bg-[#040612] py-14">
         {/* Background Glow */}
         <div className="absolute left-[-200px] top-10 h-[300px] w-[800px] rotate-[20deg] rounded-full bg-indigo-500/20 blur-[120px]" />
 
@@ -114,9 +174,9 @@ const Skills = () => {
             <div
                 ref={sliderRef}
                 className="
-                    mt-24
+                    mt-14
                     flex
-                    gap-20
+                    gap-10
                     overflow-x-auto
                     no-scrollbar
                 "
@@ -124,7 +184,7 @@ const Skills = () => {
                 {duplicatedSkills.map((skill, index) => (
                     <div
                     key={index}
-                    className="flex min-w-[180px] flex-col items-center justify-center gap-4"
+                    className="flex min-w-[180px] flex-col items-center justify-center gap-2"
                     >
                     <Image
                         src={skill.image}

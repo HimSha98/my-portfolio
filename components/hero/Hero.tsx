@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-screen bg-[#050816] text-white">
+    <section className="relative overflow-hidden min-hsd-screen bg-[#050816] text-white">
         {/* Glow Image */}
         <Image
             src="/images/hero-glow-bg.png"
