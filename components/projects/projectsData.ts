@@ -12,30 +12,30 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "DevTracker",
+    title: "Pickdrox",
     description: "...",
-    image: "/projects/devtracker.png",
-    technologies: ["React","Redux","Tailwind","Firebase"],
+    image: "/images/projects/pickdrox.jpeg",
+    technologies: ["Next.js", "Express.js", "Redux","Tailwind","MongoDb"],
     github: "",
-    live: "",
+    live: 'https://www.pickdrox.com/',
     featured: true
   },
 
   {
     id: 2,
-    title: "CodeShare",
+    title: "Visa2Fly",
     description: "...",
-    image: "/projects/codeshare.png",
-    technologies: ["Next.js","MongoDB","Tailwind"],
+    image: "/images/projects/visa2fly.png",
+    technologies: ["Express.js","MongoDB","Tailwind", "Angular"],
     github: "",
-    live: ""
+    live: "https://visa2fly.com/"
   },
 
   {
     id: 3,
-    title: "EcoCart",
+    title: "LoveChat",
     description: "...",
-    image: "/projects/ecocart.png",
+    image: "",
     technologies: ["React","Node","MongoDB"],
     github: "",
     live: ""
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Chat Application",
     description: "...",
-    image: "/projects/chatapp.png",
+    image: "",
     technologies: ["Next.js","Socket.IO","MongoDB","Redis"],
     github: "",
     live: ""

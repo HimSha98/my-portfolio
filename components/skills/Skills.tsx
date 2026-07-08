@@ -88,18 +88,18 @@ const skills: Skill[] = [
     //     height: 100,
     //     width: 100,
     // },
-    {
-        name: "Python",
-        image: "/images/skills/python.png",
-        height: 80,
-        width: 80,
-    },
-    {
-        name: "Django",
-        image: "/images/skills/django.png",
-        height: 100,
-        width: 100,
-    },
+    // {
+    //     name: "Python",
+    //     image: "/images/skills/python.png",
+    //     height: 80,
+    //     width: 80,
+    // },
+    // {
+    //     name: "Django",
+    //     image: "/images/skills/django.png",
+    //     height: 100,
+    //     width: 100,
+    // },
     {
         name: "Resend",
         image: "/images/skills/resend.png",
