@@ -192,6 +192,7 @@ const Skills = () => {
                         className="object-contain"
                         width={skill.width}
                         height={skill.height}
+                        // style={{width: "auto", height: "auto"}}
                     />
 
                     {/* <p className="text-gray-400">

@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav className="mt-5 flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 px-6 py-4 backdrop-blur-md">
 
           <h2 className="text-2xl font-bold text-violet-400">
-            Himanshu
+            Himanshu Sharma
           </h2>
 
           <div className="hidden gap-8 md:flex">
@@ -32,9 +32,9 @@ export default function Navbar() {
 
             {/* Future Theme Toggle */}
 
-            <button className="rounded-xl border border-white/10 px-4 py-2">
+            {/* <button className="rounded-xl border border-white/10 px-4 py-2">
               🌙
-            </button>
+            </button> */}
 
             <Link
               href="#contact"

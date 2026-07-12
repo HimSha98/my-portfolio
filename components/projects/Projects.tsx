@@ -1,7 +1,7 @@
 "use client";
 
 import ProjectCard from "./ProjectCard";
-import { projects } from "./projectsData";
+import { projects } from "./ProjectsData";
 
 const Projects = () => {
   return (
@@ -42,7 +42,7 @@ const Projects = () => {
         </div>
 
         {/* Bottom Button */}
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <button
             className="
             rounded-xl
@@ -56,11 +56,12 @@ const Projects = () => {
             hover:border-[#7B6EF6]
             hover:bg-[#7B6EF6]
             hover:shadow-[0_0_30px_rgba(123,110,246,0.35)]
+            cursor-pointer
           "
           >
             View All Projects
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
