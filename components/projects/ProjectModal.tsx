@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { X } from "lucide-react";
-import { Project } from "./ProjectsData";
+import { Project } from "./projectsData";
 
 interface Props {
   project: Project;
