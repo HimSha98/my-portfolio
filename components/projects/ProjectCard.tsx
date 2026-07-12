@@ -4,8 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, GitBranch } from "lucide-react";
-import { Project } from "./ProjectsData"
-import ProjectModal from "./ProjectModal";
+import { Project } from "./projectsData"
+import ProjectModal from "@/components/projects/ProjectModal";
 
 interface ProjectCardProps {
   project: Project;
