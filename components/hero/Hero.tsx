@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="flex min-h-screen flex-col items-center justify-center text-center">
 
             {/* Badge */}
-            <div className="mb-8 mt-4 rounded-md border border-white/10 bg-white/5 px-5 py-2 backdrop-blur-md flex items-center gap-2">
+            <div className="mb-8 mt-4 rounded-md border border-white/10 bg-white/5 px-5 py-2 backdrop-blur-md items-center gap-2 hidden lg:flex">
                 <Image src="/images/instant-frame.png" alt="instant-frame" width={26} height={26}/>
                 <span className="text-sm text-gray-300">
                     Building Better Software, Seamlessly Together
@@ -38,7 +38,7 @@ export default function Hero() {
 
             {/* Heading */}
 
-            <h1 className="max-w-5xl text-5xl font-bold leading-tight md:text-7xl">
+            <h1 className="max-w-5xl text-2xl font-bold leading-tight md:text-7xl">
                 Clean Code. Scalable Apps.
                 <br />
                 Reliable Delivery.
@@ -56,15 +56,16 @@ export default function Hero() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
                 <Link
-                href="/resume.pdf"
-                className="rounded-xl border border-white/10 bg-white/5 px-8 py-4 font-semibold backdrop-blur-md transition hover:bg-white/10"
+                href="/resume/Himanshu_Sharma_MERN_Resume.pdf"
+                download
+                className="rounded-xl border border-white/10 bg-white/5 px-6 sm:px-8 py-3 sm:py-4 font-semibold backdrop-blur-md transition hover:bg-white/10"
                 >
                 Download Resume
                 </Link>
 
                 <Link
                 href="#projects"
-                className="rounded-xl bg-violet-600 px-8 py-4 font-semibold shadow-[0_0_30px_rgba(124,58,237,.4)] transition hover:bg-violet-500"
+                className="rounded-xl bg-violet-600 px-6 sm:px-8 py-3 sm:py-4 font-semibold shadow-[0_0_30px_rgba(124,58,237,.4)] transition hover:bg-violet-500"
                 >
                 View My Work
                 </Link>

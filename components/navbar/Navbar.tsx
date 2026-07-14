@@ -6,12 +6,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full">
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
 
-        <nav className="mt-5 flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 px-6 py-4 backdrop-blur-md">
+        <nav className="mt-5 flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 px-4 sm:px-6 py-4 backdrop-blur-md">
 
-          <h2 className="text-2xl font-bold text-violet-400">
-            Himanshu Sharma
+          <h2 className="text-xl sm:text-2xl font-bold text-violet-400">
+            Himanshu <span className="hidden sm:inline">Sharma</span>
           </h2>
 
           <div className="hidden gap-8 md:flex">
@@ -38,7 +38,7 @@ export default function Navbar() {
 
             <Link
               href="#contact"
-              className="rounded-xl bg-violet-600 px-5 py-2"
+              className="rounded-xl bg-violet-600 px-3 sm:px-5 py-1 sm:py-2"
             >
               Contact Me
             </Link>
