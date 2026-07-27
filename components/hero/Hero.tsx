@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+// import RESUME from '@/public/resume/Himanshu_Sharma_Resume';
 
 export default function Hero() {
   return (
@@ -56,7 +57,7 @@ export default function Hero() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
                 <Link
-                href="/resume/Himanshu_Sharma_MERN_Resume.pdf"
+                href="/resume/Himanshu_Sharma_Resume.pdf"
                 download
                 className="rounded-xl border border-white/10 bg-white/5 px-6 sm:px-8 py-3 sm:py-4 font-semibold backdrop-blur-md transition hover:bg-white/10"
                 >
